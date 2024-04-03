@@ -1,5 +1,8 @@
 pipeline {
-  agent any
+  agent {
+    label 'python3-agent'  // Replace with the label of your Python 3 agent
+  }
+
   stages {
     stage('version') {
       steps {
